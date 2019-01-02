@@ -28,6 +28,17 @@ figure {
   height: 100%;
 }
 
+/* IE11 and below get a static image */
+@media all and (-ms-high-contrast:none) {
+  figure {
+    display: block;
+    overflow: hidden;
+  }
+  figure img {
+    width: 100%;
+  }
+}
+
 /** Dark box **/
 
 section {
