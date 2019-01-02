@@ -1,4 +1,4 @@
-window.addEventListener('load', function() {
+window.addEventListener('DOMContentLoaded', function() {
 
   let styling = document.createElement('style');
   styling.innerHTML = `
