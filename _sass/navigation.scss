@@ -49,6 +49,7 @@ nav {
 
         &:hover {
           transform: scale(1.2);
+          color: white;
         }
       }
     }
@@ -102,6 +103,21 @@ a.menu-toggle {
       height: 10%;
       margin-top: 20%;
       background-color: white;
+      transform: translate(0) rotate(0deg);
+      opacity: 1;
+      transition: transform 0.3s ease, opacity 0.3s ease;
     }
+  }
+}
+
+nav.active ~ a.menu-toggle {
+  i:first-child {
+    transform: translate(0,12px) rotate(45deg);
+  }
+  i:nth-child(2) {
+    opacity: 0;
+  }
+  i:last-child {
+    transform: translate(0,-11px) rotate(-45deg);
   }
 }

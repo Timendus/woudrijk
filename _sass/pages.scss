@@ -14,6 +14,18 @@ section {
 
     &.active {
       display: block;
+      animation: appear 0.3s 1 ease;
+    }
+
+    @keyframes appear {
+      0% {
+        transform: translateY(20%) scale(1.1);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0%) scale(1);
+        opacity: 1;
+      }
     }
   }
 }
