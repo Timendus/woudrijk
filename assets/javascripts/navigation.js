@@ -8,7 +8,7 @@ window.addEventListener('click', function(e) {
   }
 
   if (e.target.closest('[data-open-nav]')) {
-    document.querySelector('nav').classList.add('active');
+    document.querySelector('nav').classList.toggle('active');
     e.preventDefault();
   }
 });
@@ -42,7 +42,7 @@ window.addEventListener('resize', function() {
     document.querySelector('nav').classList.remove('active');
   } else {
     document.querySelector('nav').classList.add('active');
-  }  
+  }
 });
 
 function onMobile() {
