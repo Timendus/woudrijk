@@ -20,14 +20,10 @@ p {
   text-align: left;
 }
 
-.welcome p {
-  text-align: center;
-}
-
 a {
   color: white;
-}
 
-a:hover {
-  color: light-gray;
+  &:hover {
+    color: #dadada;
+  }
 }
