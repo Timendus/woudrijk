@@ -1,0 +1,23 @@
+/** Background slideshow **/
+
+figure {
+  z-index: 1;
+  display: none; /* Let the javascript overwrite this so we don't flicker */
+  position: absolute !important;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* IE11 and below get a static image */
+@media all and (-ms-high-contrast:none) {
+  figure {
+    display: block;
+    overflow: hidden;
+  }
+  figure img {
+    width: 100%;
+  }
+}

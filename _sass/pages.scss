@@ -1,0 +1,45 @@
+/** Dark content box **/
+
+section {
+  position: relative;
+  z-index: 2;
+  max-width: 400px;
+  background-color: rgba(0,0,0,0.4);
+  padding: 2em;
+  border-radius: 5px;
+  overflow-y: auto;
+}
+
+section.page {
+  display: none;
+}
+section.page.active {
+  display: block;
+}
+
+/** Logo on top of the page **/
+
+section.welcome {
+  h1 {
+    margin-top: 3.2em;
+  }
+
+  img.logo {
+    width: 138px;
+    height: 160px;
+    position: absolute;
+    left: 50%;
+    top: 3em;
+    margin-left: -69px;
+    animation: twirl 2s 1 ease;
+  }
+
+  @keyframes twirl {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(1080deg);
+    }
+  }
+}

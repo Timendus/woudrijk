@@ -1,0 +1,33 @@
+/** Typography **/
+
+h1, p {
+  font-family: 'Poiret One', Tahoma, Arial, sans-serif;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 10px rgba(0,0,0,0.8);
+}
+
+h1 {
+  font-size: 4em;
+  margin-top: 0em;
+}
+
+p {
+  margin-bottom: 1em;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  text-align: left;
+}
+
+.welcome p {
+  text-align: center;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: light-gray;
+}

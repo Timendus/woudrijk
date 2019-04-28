@@ -9,8 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Woudrijk</title>
-    <link href="style.css" rel="stylesheet" type="text/css"></link>
-    <script type="text/javascript" src="slideshow-magic.js"></script>
+    <link href="assets/main.css" rel="stylesheet" type="text/css"></link>
+    <script type="text/javascript" src="assets/javascripts/slideshow-magic.js"></script>
+    <script type="text/javascript" src="assets/javascripts/navigation.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One|Open+Sans" rel="stylesheet">
 
     <meta property="og:title" content="Woudrijk">
     <meta property="og:description" content="Een woongemeenschap met visie">
@@ -41,9 +43,39 @@
       <img src="backgrounds/view_from_cabin.jpg"/>
     </figure>
 
-    <section>
+    <a class="menu-toggle" data-open-nav=true>
+      <i></i><i></i><i></i>
+    </a>
+
+    <nav>
+      <img src="woudrijk.svg"/>
+      <ul>
+        <li><a href="#" data-link="welcome">Welkom!</a></li>
+        <li><a href="#" data-link="about">Onze visie</a></li>
+        <li><a href="#" data-link="contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="page welcome active">
+      <img class="logo" src="woudrijk.svg"/>
       <h1>Woudrijk</h1>
-      <p>Hier komt binnenkort de website van Woudrijk, een woongemeenschap met visie</p>
+      <p>Woudrijk is een initiatief van een groep vrienden</p>
+      <p>Onze ambitie: samen leuk wonen in bescheiden huisjes in een mooie natuurlijke omgeving</p>
+    </section>
+
+    <section class="page about">
+      <h1>Onze visie</h1>
+      <p>We willen met Woudrijk een plek creëren waar kunnen wonen, maar ook kunnen werken, ontspannen en mensen kunnen uitnodigen.</p>
+      <p>En dat alles terwijl we tegelijkertijd onze ecologische voetafdruk verkleinen en onze maandlasten verlagen.</p>
+      <p>Utopisch? Zeker.<br/>Haalbaar? Daar gaan we voor.</p>
+      <!-- <p>Lees verder in ons uitgebreidere <a href="">visiedocument</a>.</p> -->
+      <p>Volg ons avontuur op <a target="_blank" href="https://www.instagram.com/woudrijk/">Instagram</a> of <a target="_blank" href="https://www.facebook.com/woudrijk/">Facebook</a>.</p>
+    </section>
+
+    <section class="page contact">
+      <h1>Contact</h1>
+      <p>Wil je een keer met ons van gedachten wisselen? We drinken graag een keer een kop koffie.</p>
+      <p>We zijn bereikbaar via het e-mailadres <a href="mailto:info@woudrijk.nl">info@woudrijk.nl</a>.</p>
     </section>
 
   </body>
