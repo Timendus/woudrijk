@@ -60,3 +60,28 @@ section.welkom {
     }
   }
 }
+
+/** Special styling for the articles page **/
+
+section.artikelen {
+  max-width: 800px;
+  margin: 3em 0;
+
+  hr {
+    color: white;
+    margin: 4em;
+  }
+
+  p.date {
+    font-style: italic;
+    text-align: right;
+  }
+
+  @media screen and (max-width: 1350px) {
+    max-width: 600px;
+  }
+
+  @media screen and (max-width: 1150px) {
+    max-width: 400px;
+  }
+}

@@ -1,12 +1,26 @@
-import Thimbleful from 'thimbleful';
+import Thimbleful     from 'thimbleful';
+import mediumArticles from './medium';
+
 require('./slideshow-magic');
-require('./medium');
+
+/** Load articles **/
+
+mediumArticles().then(rss => {
+  document.getElementById('medium').innerHTML = rss.map(article => `
+    <a href="${article.link}"><h2>${article.title}</h2></a>
+    <p class="date">${article.date.toLocaleDateString('NL-nl')}</p>
+    <p>${article.content}</p>
+  `).join('<hr/>');
+  if ( rss.length > 0 )
+    document.querySelector('li.hidden').classList.remove('hidden');
+});
 
 /** Handle page navigation with Thimbleful router **/
 
 new Thimbleful.Router().addRoutes(
   [
     'welkom',
+    'artikelen',
     'onze-visie',
     'contact'
   ],

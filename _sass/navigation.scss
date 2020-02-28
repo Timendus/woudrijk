@@ -26,6 +26,10 @@ nav {
       border-bottom-right-radius: 5px;
       overflow: hidden;
 
+      &.hidden {
+        display: none;
+      }
+
       &:hover {
         background-color: rgba(0,0,0,0.4);
       }
