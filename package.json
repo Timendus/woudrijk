@@ -1,0 +1,14 @@
+{
+  "name": "woudrijk-webpresence",
+  "scripts": {
+    "start": "concurrently \"jekyll serve\" \"webpack --watch\"",
+    "build": "webpack --mode production"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "rss-parser": "^3.7.5",
+    "thimbleful": "0.0.2",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  }
+}
