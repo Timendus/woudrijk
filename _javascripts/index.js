@@ -1,5 +1,6 @@
 import Thimbleful from 'thimbleful';
 require('./slideshow-magic');
+require('./medium');
 
 /** Handle page navigation with Thimbleful router **/
 
