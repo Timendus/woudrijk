@@ -8,7 +8,7 @@ require('./slideshow-magic');
 mediumArticles().then(rss => {
   document.getElementById('medium').innerHTML = rss.map(article => `
     <a href="${article.link}"><h2>${article.title}</h2></a>
-    <p class="date">${article.date.toLocaleDateString('NL-nl')}</p>
+    <p class="meta">Door ${article.author} op ${article.date.toLocaleDateString('NL-nl')}</p>
     <p>${article.content}</p>
   `).join('<hr/>');
   if ( rss.length > 0 )
