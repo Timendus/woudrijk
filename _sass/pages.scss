@@ -72,9 +72,18 @@ section.artikelen {
     margin: 4em;
   }
 
-  p.date {
+  p.meta {
     font-style: italic;
     text-align: right;
+  }
+
+  figure {
+    margin: 1em 0;
+    padding: 0;
+
+    img {
+      width: 100%;
+    }
   }
 
   @media screen and (max-width: 1350px) {

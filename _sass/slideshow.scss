@@ -1,6 +1,6 @@
 /** Background slideshow **/
 
-figure {
+body > figure {
   z-index: 1;
   display: none; /* Let the javascript overwrite this so we don't flicker */
   position: absolute !important;
